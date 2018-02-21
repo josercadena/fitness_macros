@@ -9,5 +9,14 @@
                 <li><?php echo $item;?></li>
 
         <?php  endforeach;?>
+
+        <h1>Beispiel 2</h1>
+
+        <?php //foreach ($page_nums as $page_num):?>
+
+                <li><?php echo $max_page;?></li>
+
+        <?php //endforeach;?>
+
 </body>
 </html>
