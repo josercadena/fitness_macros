@@ -9,6 +9,10 @@ class Welcome extends CI_Controller {
 
 	public function index()
 	{
+		$data = array(
+			'title' => "Carlos M. Arrieta - Professional Personal Trainer"
+		);
+		$this->load->view('header', $data);
 		$this->load->view('index');
 		$this->load->view('footer');
 	}

@@ -1,27 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-  <head>
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>Carlos M. Arrieta - Professional Personal Trainer</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="<?php echo base_url("assets/vendor/bootstrap/css/bootstrap.min.css"); ?>" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="<?php echo base_url('assets/css/full-slider.css'); ?>" rel="stylesheet">
-    <link href="<?php echo base_url('assets/css/style.css'); ?>" rel="stylesheet">
-
-
-  </head>
-
-  <body>
-
+<body>
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
       <div class="container">

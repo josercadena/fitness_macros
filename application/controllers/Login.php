@@ -10,6 +10,10 @@ class Login extends CI_Controller {
 
 	public function index()
 	{
+		$data = array(
+			'title' => "Iniciar Sesión"
+		);
+		$this->load->view('header', $data);
 		$this->load->view('login');
 		$this->load->view('footer');
 	}

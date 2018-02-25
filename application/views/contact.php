@@ -1,23 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
 
-  <head>
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>Contacto</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="<?php echo base_url("assets/vendor/bootstrap/css/bootstrap.min.css"); ?>" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="<?php echo base_url('assets/css/full-slider.css'); ?>" rel="stylesheet">
-    <link href="<?php echo base_url('assets/css/style.css'); ?>" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
+<!-- Custom styles for this template -->
     <style>
       body {
         padding-top: 10%;
@@ -28,10 +10,8 @@
         }
       }
     </style>
-
-  </head>
-
-  <body>
+    
+<body>
 
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
@@ -63,7 +43,7 @@
       <div class="row">
         <div class="col">
         </div>
-        
+
         <div class="col">
           <img src="assets/img/contact/photo2.png" class="img-fluid" alt="x">
           <h1 class="">Carlos M. Arrieta</h1>

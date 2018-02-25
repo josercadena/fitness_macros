@@ -1,42 +1,3 @@
-<?php  
-//session_start();   
-?>
-
-<?php  
-    // include("resources/database/database_connect.php");  
-      
-    // if(isset($_POST['admin_login']))//this will tell us what to do if some data has been post through form with button.  
-    // {  
-    //     $admin_username=$_POST['admin_username'];  
-    //     $admin_password=$_POST['admin_pass'];  
-      
-    //     $admin_query="select * from administrators where username='$admin_username' AND password='$admin_password'";  
-      
-    //     $run_query=mysqli_query($dbcon,$admin_query);  
-      
-    //     if(mysqli_num_rows($run_query)>0)  
-    //     {  
-      
-    //         echo "<script>window.open('view_users.php','_self')</script>";  
-    //         $_SESSION['username']=$admin_username;
-    //     }  
-    //     else {echo"<script>alert('Los datos de login son incorrectos!')</script>";}   
-    // }    
-?>
-
-<html>  
-<head lang="en">  
-    <meta charset="UTF-8"> 
-    <title>Admin Login</title>  
-
-    <!-- Bootstrap core CSS -->
-    <link href="<?php echo base_url("assets/vendor/bootstrap/css/bootstrap.min.css"); ?>" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="<?php echo base_url('assets/css/full-slider.css'); ?>" rel="stylesheet">
-    <link href="<?php echo base_url('assets/css/style.css'); ?>" rel="stylesheet">
-
-</head>  
 <style>  
     .login-panel {  
         margin-top: 60%;
@@ -79,7 +40,7 @@
             <div class="col"> 
                 <div class="login-panel panel panel-success">  
                     <div class="panel-heading">  
-                        <h1 class="panel-title">Admin Login</h3>  
+                        <h1 class="panel-title">Iniciar Sesión</h3>  
                     </div>  
                     <div class="panel-body">  
                         <?php echo form_open("login/credentials_submitted",'class="form"', 'role="form"'); ?>
