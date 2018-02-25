@@ -2,7 +2,6 @@
 
 Class Login_model extends CI_Model {
 
-
     public function login_inspect($data){
         $login_condition="username='" . $data['admin_username'] . "' AND password='" . $data['admin_password'] . "'"; 
         $this->db->select('*'); 
