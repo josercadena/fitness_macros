@@ -11,10 +11,12 @@
     <title>Carlos M. Arrieta - Professional Personal Trainer</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="<?php echo base_url("assets/vendor/bootstrap/css/bootstrap.min.css"); ?>" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="css/full-slider.css" rel="stylesheet">
+    <link href="<?php echo base_url('assets/css/full-slider.css'); ?>" rel="stylesheet">
+    <link href="<?php echo base_url('assets/css/style.css'); ?>" rel="stylesheet">
+
 
   </head>
 
@@ -30,15 +32,15 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Home
+              <a class="nav-link" href="<?php echo base_url(); ?>">Home
                 <span class="sr-only">(current)</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="login.php">WebApp</a>
+              <a class="nav-link" href="<?php echo site_url('login'); ?>">WebApp</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="contact.php">Contacto</a>
+              <a class="nav-link" href="<?php echo site_url('contact'); ?>">Contacto</a>
             </li>
           </ul>
         </div>
@@ -54,21 +56,21 @@
         </ol>
         <div class="carousel-inner" role="listbox">
           <!-- Slide One - Set the background image for this slide in the line below -->
-          <div class="carousel-item active" style="background-image: url('img/main/1.png')">
+          <div class="carousel-item active" style="background-image: url('assets/img/main/1.png')">
             <div class="carousel-caption">
               <h1 class="display-1">Alcanza tus metas</h1>
               <p class="lead">Descubre una nueva versión de tí mismo</p>
             </div>
           </div>
           <!-- Slide Two - Set the background image for this slide in the line below -->
-          <div class="carousel-item" style="background-image: url('img/main/2.png')">
+          <div class="carousel-item" style="background-image: url('assets/img/main/2.png')">
             <div class="carousel-caption">
               <h1 class="display-1">Supérate cada día</h1>
               <p class="lead">Porque cada paso cuenta</p>
             </div>
           </div>
           <!-- Slide Three - Set the background image for this slide in the line below -->
-          <div class="carousel-item" style="background-image: url('img/main/3.png')">
+          <div class="carousel-item" style="background-image: url('assets/img/main/3.png')">
             <div class="carousel-caption">
               <h1 class="display-1">Transforma tus hábitos</h1>
               <p class="lead">Diseñamos un plan de alimentación exclusivo para ti</p>
@@ -94,7 +96,7 @@
         <div class="col">
           <blockquote class="blockquote text-center">
             <p class="mb-0">El mejor momento para iniciar un estilo de vida saludable fue hace unos años. El segundo mejor momento es <b>ahora</b>.</p>
-            <footer class="blockquote-footer text-light">Un sabio proverbio chino</footer>
+            <div class="blockquote-footer text-light">Un sabio proverbio chino</div>
           </blockquote>
           <center><a class="btn btn-light btn-lg font-weight-bold" href="contact.php">¡Comienza ahora!</a></center>
         </div>
@@ -103,18 +105,4 @@
       </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="py-5 bg-light">
-      <div class="container">
-        <p class="m-0 text-center text-secondary">Copyright &copy; <a class="text-secondary" href="http://twitter.com/josercadena"><b>Carlos M. Arrieta</b>, 2018</a></p>
-      </div>
-      <!-- /.container -->
-    </footer>
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-  </body>
-
-</html>
