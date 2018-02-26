@@ -73,8 +73,8 @@
                 <td><?php echo ucwords( strtolower($user_names . " " . $user_last_names));?></td>  
                 <td><?php echo ucwords( strtolower($user_gender));  ?></td>  
                 <td>
-                <a href="read_user.php?id=<?php echo $id ?>"><button class="btn btn-success">Ver</button></a> 
-                <a href="update_user.php?id=<?php echo $id ?>"><button class="btn btn-dark">Editar</button></a>
+                <a href="<?php echo site_url("dashboard/read_user/" . $id); ?>"><button class="btn btn-success">Ver</button></a> 
+                <a href="<?php echo site_url("dashboard/edit_user/" . $id); ?>"><button class="btn btn-dark">Editar</button></a>
                 <a onClick="return confirm('¿Está completamente seguro que desea eliminar este elemento?')" href="delete_user.php?id=<?php echo $id ?>"><button class="btn btn-danger">Eliminar</button></a></td>
         </tr>  
       
