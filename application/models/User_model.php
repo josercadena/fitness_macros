@@ -13,5 +13,10 @@ Class User_model extends CI_Model {
             return false; 
         }
     }
+
+    public function insert_user($user){
+        $a =   $this->db->insert('users', $user); 
+        return $a; 
+    }
 }
 ?>

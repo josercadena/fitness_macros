@@ -36,8 +36,7 @@
         <hr>
         <div class="col">
             <p>¿El usuario que buscas aún no está registrado?</p>
-            <p><a class="btn btn-success" href="new_user.php"> Nuevo Usuario &raquo;</a></p>
-        </div>
+            <p><a class="btn btn-success" href="<?php echo site_url('dashboard/new_user'); ?>"> Nuevo Usuario &raquo;</a></p>
     </div>  
     </div>
 
