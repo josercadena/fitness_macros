@@ -30,7 +30,7 @@
     </div>
 
     
-    <?php echo form_open("dashboard/new_user",'class="form"', 'name="form"'); ?>
+    <?php echo form_open("dashboard/edit_user/".$user->id_user."",'class="form"', 'name="form"'); ?>
     <h2>Datos Personales</h2>
       <div class="col-md-12">
             <div class="form-group">

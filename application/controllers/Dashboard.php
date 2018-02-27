@@ -68,7 +68,27 @@ class Dashboard extends CI_Controller {
 
 	public function edit_user($id_user = NULL){
 		if($id_user!=NULL){
-			$user = $this->user_model->update_user($id_user);
+			if(!empty($this->input->post())){
+				$user_update = array(
+					"id_user" =>$id_user,
+					"names" => $this->input->post('names'),
+					"last_names" => $this->input->post('last_names'),
+					"gender" => $this->input->post('gender'),
+					"type_identification" => $this->input->post('type_identification'),
+					"identification" => $this->input->post('identification'),
+					"date_birth" => $this->input->post('date_birth'),
+					"occupation" => $this->input->post('occupation'),
+					"email" => $this->input->post('email'),
+					"phone" => $this->input->post('phone'),
+					"notes" => $this->input->post('notes'),
+					"id_fitness_index" => $this->input->post('fitness_index'),
+					"id_protein_index" => $this->input->post('protein_index'),
+					"id_fat_index" => $this->input->post('fat_index'),
+				);
+				$this->user_model->update_user($user_update);
+			}
+
+			$user = $this->user_model->find_user($id_user);
 			if (!empty($user)){
 				$data['title'] = "Editar Usuario";
 				$data['user'] = $user;
