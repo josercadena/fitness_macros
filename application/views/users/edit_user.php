@@ -43,7 +43,7 @@
             </div>
             <div class="form-group">
                 <label for="formGroupExampleInput">Género:</label>
-                <input id="last_names" name="last_names" type="text" class="form-control" placeholder="Casas Redondo" required="required" value="<?php echo $user->gender; ?>" readonly>
+                <input id="gender" name="gender" type="text" class="form-control" placeholder="masculino" required="required" value="<?php echo $user->gender; ?>" readonly>
             </div>
       </div>
 
@@ -88,7 +88,7 @@
       <div class="col-md-12">
           <div class="form-group">
                 <label>Notas:</label>
-                <textarea id="notes" name="notes" type="textarea" class="form-control" placeholder="- No puede esforzar las rodillas por lesión &#10;- Dieta vegana" value="<?php echo $user->notes; ?>"></textarea>
+                <textarea id="notes" name="notes" type="textarea" class="form-control" placeholder="- No puede esforzar las rodillas por lesión &#10;- Dieta vegana" value=""><?php echo $user->notes; ?></textarea>
           </div>
       </div>
 

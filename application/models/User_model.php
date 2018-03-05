@@ -26,14 +26,28 @@ Class User_model extends CI_Model {
         }
     }
 
+    public function find_controls($id_user){
+        $this->db->select('*'); 
+        $this->db->from('controls');
+        $this->db->where('id_user', $id_user);
+        $query = $this->db->get(); 
+        return $query->result(); 
+       // if ($query->num_rows() > 0){
+        //     return $query; 
+        // }else {
+        //     return false; 
+        // }
+    }
+
     public function insert_user($user){
         return $this->db->insert('users', $user); 
     }
 
     public function update_user($user){
-        $this->db->where('id_user', $user['id_user']);
-        $this->db->update('users', $user);
-        $query = $this->db->get(); 
+        //this->db->where('id_user', $user['id_user']);
+        $this->db->replace('users', $user);
+        //$query = $this->db->get(); 
+        //echo $query; 
     }
 }
 ?>

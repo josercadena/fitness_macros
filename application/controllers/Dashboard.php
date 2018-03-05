@@ -51,11 +51,15 @@ class Dashboard extends CI_Controller {
 	public function read_user($id_user = NULL){
 		if($id_user!=NULL){
 			$user = $this->user_model->find_user($id_user);
+			$controls = $this->user_model->find_controls($id_user);
 			if (!empty($user)){
 				$data['title'] = "Ver Usuario";
 				$data['user'] = $user;
+				$data['controls'] = $controls;
+
 				$this->load->view('header', $data);
-				$this->load->view('users/read_user', $user);
+				$this->load->view('users/read_user');
+				$this->load->view('users/read_user_controls');
 				$this->load->view('footer');
 			} else{
 				redirect('/dashboard', 'refresh');		

@@ -21,45 +21,6 @@
       </div>
     </nav>
 
-    <?php
-        // include("resources/database/database_connect.php");
-
-        // if(!empty($_POST)){
-
-        //     $nombres=$_POST['nombres'];
-        //     $apellidos=$_POST['apellidos'];
-        //     $identificacion=$_POST['identificacion']; 
-        //     $genero=$_POST['genero'];
-        //     $email=$_POST['email']; 
-        //     $telefono=$_POST['telefono'];
-        //     $fecha_nacimiento=$_POST['fecha_nacimiento'];
-
-
-        //     if ($nombres=="" or $apellidos=="" or $identificacion=="" or $fecha_nacimiento==""){
-        //         echo "  <div class='alert alert-danger' role='alert'>
-        //                     Ha ocurrido un error. Intente más tarde.
-        //                     </div>";
-    
-        //     } else {
-        //         $query =    "INSERT INTO `users` (`id`, `identificacion`, `nombres`, `apellidos`, `genero`, `email`, `telefono`, `fecha_nacimiento`) 
-        //                     VALUES (NULL, '$identificacion', '$nombres', '$apellidos', '$genero', '$email', '$telefono', '$fecha_nacimiento')";
-        
-        //         if($dbcon->query($query)){
-        //             ?> 
-                     <script>
-        //                 alert("¡Nuevo registro exitoso!");
-        //                 window.location.href = "view_users.php";
-        //             </script>;
-                     <?php
-        //         } else {
-        //             echo "  <div class='alert alert-danger' role='alert'>
-        //                     Ha ocurrido un error. Intente más tarde.
-        //                     </div>";
-        //         }
-        //     }
-        // }
-    ?>
-
     <div class="container">
     <div class ="col-md-6 offset-md-3">
 
