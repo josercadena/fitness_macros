@@ -1,6 +1,6 @@
 <h2>Controles</h2>
 
-<p><a class="btn btn-success btn-block" href="<?php echo site_url('dashboard/new_user'); ?>"> Nuevo Control &raquo;</a></p>
+<p><a class="btn btn-success btn-block" href="<?php echo site_url('controls/new_control/'.$user->id_user.''); ?>"> Nuevo Control &raquo;</a></p>
 
 <?php if (!empty($controls)){?>
 <table class="table table-hover table-bordered">

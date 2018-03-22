@@ -22,7 +22,7 @@
     </nav>
 
     <div class="container">
-    <div class ="col-md-6 offset-md-3">
+    <div class ="col-md-8 offset-md-2">
 
     <div class="py-3">
         <p><a href="javascript:window.history.go(-1); "> <button class="btn ">Atrás</button></a></p>
